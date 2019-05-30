@@ -8,8 +8,10 @@ python cluster.py [-args]
 For information on args, use "python cluster.py -h"  
 Examples:
 1. python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -model_path=$MODEL_PATH  
-2. python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -train  
-3. python cluster.py -extractor=detectionnetwork -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -base_model=vgg16_bn  
+2. python cluster.py -extractor=detectionnetwork -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -base_model=vgg16_bn  
+
+To train the auto-encoder network:  
+3. python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -train  
 
 ### Feature Extractors
 Feature Extractors are defined under extractors/.
