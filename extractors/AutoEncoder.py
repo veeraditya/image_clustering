@@ -26,7 +26,7 @@ class AutoEncoderExtractor(FeatureExtractor):
         if params['train']:
             self.train(params)
         elif params['model_path'] is not None and params['model_path'] != '':
-            self.model.load_state_dict(torch.load(params['model_path']))
+            self.model.load_state_dict(torch.load(params['model_path'], map_location=lambda storage, location: storage))
             self.model.to(self.device)
         else:
             raise Exception('no model specified: use model_path to give path of trained model or set -train')
