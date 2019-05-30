@@ -6,10 +6,10 @@ It is based on features extracted from Neural Networks (support both deep and sh
 Image Clustering can be used with a command line argument:  
 python cluster.py [-args]  
 For information on args, use "python cluster.py -h"  
-Example:  
-python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -model_path=$MODEL_PATH  
-python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -train  
-python cluster.py -extractor=detectionnetwork -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -base_model=vgg16_bn  
+Examples:
+1. python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -model_path=$MODEL_PATH  
+2. python cluster.py -extractor=autoencoder -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -train  
+3. python cluster.py -extractor=detectionnetwork -input_dir=$INPUT_DIR -output_dir=$OUTPUT_DIR -base_model=vgg16_bn  
 
 ### Feature Extractors
 Feature Extractors are defined under extractors/.
