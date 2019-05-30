@@ -1,0 +1,6 @@
+numpy
+pillow
+tqdm
+torch
+torchvision
+sklearn
